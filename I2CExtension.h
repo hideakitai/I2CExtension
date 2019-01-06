@@ -126,7 +126,7 @@ public:
 
     bool writeBits(uint8_t dev, uint8_t reg, uint8_t bit_begin, uint8_t size, uint8_t data)
     {
-        uint8_t b = readByte(dev, reg)
+        uint8_t b = readByte(dev, reg);
         uint8_t mask = ((1 << size) - 1) << (bit_begin - size + 1);
         data <<= (bit_begin - size + 1); // shift data into correct position
         data &= mask; // zero all non-important bits in data
