@@ -25,7 +25,7 @@ public:
             {
                 Serial.print("addr : 0x"); Serial.println(i, HEX);
                 count++;
-                delay(1);
+                delay(10);
             }
         }
         Serial.print("found ");
